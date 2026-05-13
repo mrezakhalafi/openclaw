@@ -4,6 +4,7 @@ services:
     runtime: docker
     plan: free
     healthCheckPath: /health
+    dockerCommand: openclaw gateway --bind lan --port 8080
     envVars:
       - key: OPENCLAW_GATEWAY_PORT
         value: "8080"
